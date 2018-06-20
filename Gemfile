@@ -5,7 +5,6 @@ ruby '2.4.1'
 
 gem 'activerecord-postgis-adapter'
 gem 'bootsnap'
-gem 'heroku'
 gem 'jbuilder', '~> 2.5'
 gem 'pg'
 gem 'puma', '~> 3.11'
