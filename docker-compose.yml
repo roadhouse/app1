@@ -26,5 +26,6 @@ services:
       - db
     environment:
       DATABASE_URL: postgis://docker:docker@db:5432
-      RAILS_ENV: development
       RACK_ENV: development
+      RAILS_ENV: development
+      RAILS_LOG_TO_STDOUT: 'true'
