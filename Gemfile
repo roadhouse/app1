@@ -12,8 +12,6 @@ gem 'rails', '~> 5.2.0'
 gem 'uglifier'
 gem 'kaminari'
 
-gem "rails_12factor", group: :production
-
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'listen'
