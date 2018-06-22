@@ -98,7 +98,7 @@ class UbsParams
     @params = params
     @latitude, @longitude = @params[:query].split(",").tap { |p| raise ArgumentError, p unless p.size == 2 }
     @page = @params[:page]
-    @page = @params[:per_page]
+    @per_page = @params[:per_page]
   end
 end
 
@@ -112,7 +112,7 @@ module Api
       private
 
       def find_params
-        params.permit(:query,:page, :per_page)
+        params.permit(:query, :page, :per_page)
       end
     end
   end
