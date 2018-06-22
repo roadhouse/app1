@@ -35,6 +35,8 @@ module Api
         render json: UbsFinderService.ubs(find_params).to_json
       end
 
+      private
+
       def find_params
         params.permit(:query,:page, :per_page)
       end
