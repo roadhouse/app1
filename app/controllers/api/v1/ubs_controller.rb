@@ -9,6 +9,7 @@ class UbsBuilder
     @count = params.fetch(:count)
     @collection = params.fetch(:collection)
     @current_page = params.fetch(:current_page)
+    @page = params.fetch(:page)
     @per_page = params.fetch(:per_page)
   end
 
