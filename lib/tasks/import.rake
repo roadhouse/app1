@@ -11,4 +11,3 @@ namespace :import do
       .tap { |c| p "Total created: #{c.size}" }
   end
 end
-# ["Desempenho acima da média", "Desempenho mediano ou  um pouco abaixo da média", "Desempenho muito acima da média"]
