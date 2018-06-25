@@ -14,10 +14,6 @@ class UbsFinderService
     serialize query
   end
 
-  def serialize(query)
-    @builder.build builder_data(query)
-  end
-
   def builder_data(collection)
     {
       current_page: @params.page,
@@ -25,6 +21,11 @@ class UbsFinderService
       count: count,
       collection: query
     }
+  end
+
+
+  def serialize(query)
+    @builder.build builder_data(query)
   end
 
   private
