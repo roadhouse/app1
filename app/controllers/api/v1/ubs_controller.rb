@@ -2,6 +2,7 @@ module Api
   module V1
     class UbsController < ApplicationController
       rescue_from StandardError, with: :render_error
+
       def find_ubs
         render json: UbsFinderService.ubs(find_params).to_json
       end
