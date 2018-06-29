@@ -1,24 +1,25 @@
-# README
+# setup
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+```
+git clone git@github.com:roadhouse/app1.git
+```
 
-Things you may want to cover:
+```
+cd app1`
+```
 
-* Ruby version
+```
+docker-compose up db`
+```
+```
+export DATABASE_URL=postgres://docker:docker@localhost:25432`
+```
+```
+rake db:create db:migrate import:ubs`
+```
+```
+docker-compose up web`
+```
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+heroku url: https://jeanbionexoteste.herokuapp.com
+  
